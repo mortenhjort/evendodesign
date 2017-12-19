@@ -8,7 +8,7 @@
 
     #p{
         background:$lightblue;
-        min-width: 350px;
+        width: 350px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -134,7 +134,8 @@
     // TIMELINE
 
     #t{
-        min-width: 400px;
+        position: relative;
+        width: 400px;
         border-left:1px solid $lightgrey;
         border-right:1px solid $lightgrey;
         padding: 1em;
@@ -145,16 +146,40 @@
                 font-size: $fontsmall;
                 font-weight: $regular;
                 color:$grey;
-                padding-bottom: 4em;
+                padding-bottom: 6em;
                 &:last-child{
                     padding-bottom: 0;
                 }
             }
         }
+
+        #tcontent{
+            position: absolute;
+            width: calc(100% - 6em);
+            top:0;
+            left:5em;
+            right:1em;
+            box-sizing: border-box;
+            .punit{
+                position: absolute;
+                border-radius: $borderradius;
+                background: $plannerblue;
+                color:$blue;
+                padding: 1em;
+                box-sizing: border-box;
+            }
+
+        }
+
+        
     }
 
     // CONTENTAREA
     #c{
+        flex: 1;
+        #mainnav{
+            border-bottom: 1px solid $lightgrey;
+        }
 
      }
 }

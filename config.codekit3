@@ -251,20 +251,6 @@
 		"oAP": "\/planner.html",
 		"oF": 0
 		},
-	"\/productdetailpage-iframe.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/productdetailpage-iframe.html",
-		"oF": 0
-		},
-	"\/productdetailpage-iframe.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/productdetailpage-iframe.html",
-		"oF": 0
-		},
 	"\/productdetailpage.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -503,7 +489,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 534761073,
-	"displayValue": "EvendoV3",
+	"displayValue": "V3 - Evendo",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-yesBaby"
 	},
