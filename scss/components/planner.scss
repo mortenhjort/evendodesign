@@ -188,6 +188,7 @@
     // CONTENTAREA
     #c{
         flex: 1;
+        overflow: scroll;
         #mainnav{
 /*            border-bottom: 1px solid $lightgrey;*/
             ul{
@@ -273,9 +274,24 @@
                  border-bottom: 1px solid $lightgrey;
                  padding-bottom: 1em;
               }
+            //   Set Google Maps height
+              .google-maps{
+                padding-bottom: 75%;
+              }
              }
            
-            
+            #budget{
+                li{
+                    display: flex;
+                    justify-content: space-between;
+                    p{
+                        margin: .5em 0;
+                    }
+                    p.space{
+                        margin-bottom: 2em;
+                    }
+                }
+            }
         }
     }
 }

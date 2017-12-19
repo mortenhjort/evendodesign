@@ -62,28 +62,33 @@
 // PLANNER CARDS
 
 .pcards{
-    li a{
-        display: flex;
-        align-items: center;
-        .pimg img{
-            width: 200px;
-            border-radius: $borderradius;
-            padding-right: 2em;
-        }
-        .meta{
-            h4{
-                border:none!important;
-                margin:0;
+    li {
+        padding: 1em 0;
+        &:first-child{padding-top: 0;}
+        &:last-child{padding-bottom: 0;}
+        a{
+            display: flex;
+            align-items: center;
+            .pimg img{
+                width: 200px;
+                border-radius: $borderradius;
+                padding-right: 2em;
             }
-            h2{
-                margin:0;
-            }
-            img{
-                width: 2em;
-                padding: 1em;
-                background: $lightgrey;
-                border-radius: 50px;
-                margin-top: 1em;
+            .meta{
+                h4{
+                    border:none!important;
+                    margin:0;
+                }
+                h2{
+                    margin:0;
+                }
+                img{
+                    width: 2em;
+                    padding: 1em;
+                    background: $lightgrey;
+                    border-radius: 50px;
+                    margin-top: 1em;
+                }
             }
         }
     }

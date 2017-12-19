@@ -1,124 +1,133 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Evendo V3</title>
-  <meta name="description" content="">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">  
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <title>Evendo V3</title>
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
 
-     <!-- jQuery only for demo purpose  -->
+    <!-- jQuery only for demo purpose  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 </head>
+
 <body id="planner">
 
     <main id="pgrid">
 
         <div id="p">
-            
+
             <div "pwrap">
-            <header>
-                <img class="goback" src="img/icons/goback.svg" alt="Go back">
-                <img class="logo" src="img/logos/evendo.svg" alt="Evendo logo">
+                <header>
+                    <img class="goback" src="img/icons/goback.svg" alt="Go back">
+                    <img class="logo" src="img/logos/evendo.svg" alt="Evendo logo">
 
-                <ul>
-                    <li class="active"><a href="#">ACTIVE</a></li>
-                    <li class=""><a href="#">ENDED</a></li>
+                    <ul>
+                        <li class="active">
+                            <a href="#">ACTIVE</a>
+                        </li>
+                        <li class="">
+                            <a href="#">ENDED</a>
+                        </li>
+                    </ul>
+                </header>
+
+
+                <ul id="projects">
+                    <li class="sp">
+                        <div class="cal">
+                            <img src="img/icons/planner-cal.svg">
+                            <div class="daywrap">
+                                <div class="day">22</div>
+                            </div>
+                        </div>
+
+                        <div class="name">
+                            <h4 class="pname">My Project</h4>
+                            <h4 class="pday">Friday, 22 September 2018 </h4>
+                        </div>
+
+                    </li>
+
+                    <li class="sp open">
+                        <div class="cal">
+                            <img src="img/icons/planner-cal.svg">
+                            <div class="daywrap">
+                                <div class="day">1</div>
+                            </div>
+
+                        </div>
+
+                        <div class="name">
+                            <h4 class="pname">My Project 2</h4>
+                            <h4 class="pday">Friday, 1 july 2018 </h4>
+                        </div>
+
+
+                        <!-- ADDED WHEN OPEN -->
+                        <div class="popen">
+
+                            <ul>
+                                <li>
+                                    <h4>TYPE</h4>
+                                    <p>Teambuilding</p>
+                                </li>
+
+                                <li>
+                                    <h4>LOCATION</h4>
+                                    <p>Copenhagen</p>
+                                </li>
+
+                                <li>
+                                    <h4>PARTICIPANTS</h4>
+                                    <p>43</p>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+
+                    </li>
+
+                    <li class="sp">
+                        <div class="cal">
+                            <img src="img/icons/planner-cal.svg">
+                            <div class="daywrap">
+                                <div class="day">19</div>
+                            </div>
+
+                        </div>
+
+                        <div class="name">
+                            <h4 class="pname">My Project 3</h4>
+                            <h4 class="pday">Friday, 19 august 2018 </h4>
+                        </div>
+
+                    </li>
+
                 </ul>
-            </header>
-
-
-            <ul id="projects">
-                <li class="sp">
-                    <div class="cal">
-                        <img src="img/icons/planner-cal.svg">
-                        <div class="daywrap">
-                            <div class="day">22</div>
-                        </div>
-                     </div>
-
-                     <div class="name">
-                        <h4 class="pname">My Project</h4>
-                        <h4 class="pday">Friday, 22 September 2018 </h4>
-                     </div>
-
-                </li>
-
-                <li class="sp open">
-                    <div class="cal">
-                        <img src="img/icons/planner-cal.svg">
-                        <div class="daywrap">
-                            <div class="day">1</div>
-                        </div>
-                        
-                     </div>
-
-                     <div class="name">
-                        <h4 class="pname">My Project 2</h4>
-                        <h4 class="pday">Friday, 1 july 2018 </h4>
-                     </div>
-
-
-                     <!-- ADDED WHEN OPEN -->
-                     <div class="popen">
-
-                        <ul>
-                            <li>
-                                <h4>TYPE</h4>
-                                <p>Teambuilding</p>
-                            </li>
- 
-                            <li>
-                                 <h4>LOCATION</h4>
-                                <p>Copenhagen</p>
-                            </li>
-
-                            <li>
-                                <h4>PARTICIPANTS</h4>
-                                 <p>43</p>
-                            </li>
-
-                        </ul>
-
-                     </div>
-
-
-
-                </li>
-
-                <li class="sp">
-                    <div class="cal">
-                        <img src="img/icons/planner-cal.svg">
-                        <div class="daywrap">
-                            <div class="day">19</div>
-                        </div>
-                        
-                     </div>
-
-                     <div class="name">
-                        <h4 class="pname">My Project 3</h4>
-                        <h4 class="pday">Friday, 19 august 2018 </h4>
-                     </div>
-
-                </li>
-
-            </ul>
-        </div>
-
-        <a href="#">
-         <div id="addnew">
-
-                <svg version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g fill="#787B7D"><path d="M14,8h-6v6h-2v-6h-6v-2h6v-6h2v6h6v2Z" transform="translate(5, 5)"></path><path fill="none" d="M0,0h24v24h-24Z"></path></g>
-                </svg>
-                <h4>Add new</h4>
-
             </div>
-        </a>
+
+            <a href="#">
+                <div id="addnew">
+
+                    <svg version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g fill="#787B7D">
+                            <path d="M14,8h-6v6h-2v-6h-6v-2h6v-6h2v6h6v2Z" transform="translate(5, 5)"></path>
+                            <path fill="none" d="M0,0h24v24h-24Z"></path>
+                        </g>
+                    </svg>
+                    <h4>Add new</h4>
+
+                </div>
+            </a>
 
 
         </div>
@@ -126,31 +135,31 @@
         <div id="t">
 
             <ul id="timeline">
-                <li>07:00</li> 
-                <li>08:00</li> 
-                <li>09:00</li> 
-                <li>10:00</li> 
-                <li>11:00</li> 
-                <li>12:00</li> 
-                <li>13:00</li> 
-                <li>14:00</li> 
-                <li>15:00</li> 
-                <li>16:00</li> 
-                <li>17:00</li> 
-                <li>18:00</li> 
-                <li>19:00</li> 
-                <li>20:00</li> 
-                <li>21:00</li> 
-                <li>22:00</li> 
-                <li>23:00</li> 
-                <li>24:00</li> 
-                <li>00:00</li> 
-                <li>01:00</li> 
-                <li>02:00</li> 
-                <li>03:00</li> 
-                <li>04:00</li> 
-                <li>05:00</li> 
-                <li>06:00</li> 
+                <li>07:00</li>
+                <li>08:00</li>
+                <li>09:00</li>
+                <li>10:00</li>
+                <li>11:00</li>
+                <li>12:00</li>
+                <li>13:00</li>
+                <li>14:00</li>
+                <li>15:00</li>
+                <li>16:00</li>
+                <li>17:00</li>
+                <li>18:00</li>
+                <li>19:00</li>
+                <li>20:00</li>
+                <li>21:00</li>
+                <li>22:00</li>
+                <li>23:00</li>
+                <li>24:00</li>
+                <li>00:00</li>
+                <li>01:00</li>
+                <li>02:00</li>
+                <li>03:00</li>
+                <li>04:00</li>
+                <li>05:00</li>
+                <li>06:00</li>
             </ul>
 
 
@@ -171,7 +180,7 @@
                 </div>
 
                 <div class="punit" style="top:500px;width:100%;height:200px;">
-                    Restaurant  
+                    Restaurant
                 </div>
 
             </div>
@@ -193,76 +202,166 @@
 
         <div id="c">
 
-                <!-- EMPTY-STATE -->
-                <!-- <div id="emptystate">
+            <!-- EMPTY-STATE -->
+            <!-- <div id="emptystate">
                     <img src="img/logos/evendosmallgrey.svg">
                 </div> -->
-        
-                    <header id="mainnav">
-                        <ul>
-                            <li class="active"><a href="#"><h4>Om denne pakke</h4></a></li>
-                            <li class=""><a href="#"><h4>Program</h4></a></li>
-                            <li class=""><a href="#"><h4>Fakta</h4></a></li>
-                            <li class=""><a href="#"><h4>Budget</h4></a></li>
-                            <li class=""><a href="#"><h4>Kort</h4></a></li>
-                        </ul>
-                    </header>
 
-                    <figure id="hero" style="background-image:url(img/dummy/plannerhero.jpg)">
-                        <div class="ol">
-                            <h1>My Project 1</h1>
-                            <p>Oh I´m some awesome description!</p>
-                        </div>
-
-                        <a id="settings" href="#">
-                            <img src="img/icons/settings-blue.svg" alt="Settings">
-                        </a>
-                    </figure>
-
-
-
-                    <ul id="overview">
-                        <li class="section">
+            <header id="mainnav">
+                <ul>
+                    <li class="active">
+                        <a href="#">
                             <h4>Om denne pakke</h4>
-                            <p>Dette julearrangement vil sandsynligvis give enhver kødelsker julelys i øjnene. Aftenens julemenu bliver nemlig tilberedt og leveret af restaurant KöD, der er kendt for de bedste udskæringer fra bl.a. Danmark, USA og Uruguay.</p><p>Her ved man, hvordan et stykke kød skal tilberedes til perfektion, og hvordan hver bøf sættes bedst sammen med det velsmagende tilbehør. Der er fri bar med øl, vin og vand under middagen (3 timer) og mulighed for at tilkøbe kaffe/the, ekstra timers fri bar og cocktailbar under produktet.</p>
-                        </li>
-                   
-                        <li class="section">
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
                             <h4>Program</h4>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <h4>Fakta</h4>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <h4>Budget</h4>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <h4>Kort / Transport</h4>
+                        </a>
+                    </li>
+                </ul>
+            </header>
 
-                            <ul class="pcards">
-                                <li>
-                                    <a href="#">
-                                    <div class="pimg">
-                                      <img src="https://d3ulizuhtuf022.cloudfront.net/images/555/39f80cf8366946a0bf832b4d57849b77.png">
-                                     </div>
-                                    <div class="meta">
-                                        <h4>15:00 - 18:00</h4>
-                                        <h2>Human Football</h2>
-                                        <img src="img/icons/arrow-right.svg">
-                                    </div>
-                                    </a>
-                                </li>    
-                            </div>
+            <figure id="hero" style="background-image:url(img/dummy/plannerhero.jpg)">
+                <div class="ol">
+                    <h1>My Project 1</h1>
+                    <p>Oh I´m some awesome description!</p>
+                </div>
 
-                        </ul>
-                   
+                <a id="settings" href="#">
+                    <img src="img/icons/settings-blue.svg" alt="Settings">
+                </a>
+            </figure>
+
+
+
+            <ul id="overview">
+                <li class="section">
+                    <h4>Om denne pakke</h4>
+                    <p>Dette julearrangement vil sandsynligvis give enhver kødelsker julelys i øjnene. Aftenens julemenu bliver
+                        nemlig tilberedt og leveret af restaurant KöD, der er kendt for de bedste udskæringer fra bl.a. Danmark,
+                        USA og Uruguay.</p>
+                    <p>Her ved man, hvordan et stykke kød skal tilberedes til perfektion, og hvordan hver bøf sættes bedst sammen
+                        med det velsmagende tilbehør. Der er fri bar med øl, vin og vand under middagen (3 timer) og mulighed
+                        for at tilkøbe kaffe/the, ekstra timers fri bar og cocktailbar under produktet.</p>
+                </li>
+
+                <li class="section">
+                    <h4>Program</h4>
+
+                    <ul class="pcards">
+                        <li>
+                            <a href="#">
+                                <div class="pimg">
+                                    <img src="https://d3ulizuhtuf022.cloudfront.net/images/555/39f80cf8366946a0bf832b4d57849b77.png">
+                                </div>
+                                <div class="meta">
+                                    <h4>15:00 - 18:00</h4>
+                                    <h2>Human Football</h2>
+                                    <img src="img/icons/arrow-right.svg">
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">
+                                <div class="pimg">
+                                    <img src="https://d3ulizuhtuf022.cloudfront.net/images/555/fbf66319e6eb49f4a313b3518bff926f.png">
+                                </div>
+                                <div class="meta">
+                                    <h4>18:00 - 22:00</h4>
+                                    <h2>Fuego</h2>
+                                    <img src="img/icons/arrow-right.svg">
+                                </div>
+                            </a>
+                        </li>
                     </ul>
+
+                    <li class="section">
+                        <h4>Budget</h4>
+                        <ul id="budget">
+                            <li>
+                                <p>Borde, stole & Service</p>
+                                <p>DKK 12.000,00</p>
+                            </li>
+                            <li>
+                                <p>Restaurant KöD</p>
+                                <p>DKK 56.000,00</p>
+                            </li>
+                            <li>
+                                <p>DJ Nick Coldhands</p>
+                                <p>DKK 1.000,00</p>
+                            </li>
+                            <li>
+                                <p class="space">Subtotal inkl. moms</p>
+                                <p>DKK 80.000,00</p>
+                            </li>
+                            <li>
+                                <p>Sodavand</p>
+                                <p>DKK 2.000,00</p>
+                            </li>
+                            <li>
+                                <p>Øl</p>
+                                <p>DKK 7.500,00</p>
+                            </li>
+                            <li>
+                                <p class="space">Total inkl moms</p>
+                                <p>DKK 7.500,00</p>
+                            </li>
+                            <li>
+                                <p>Pris pr deltager</p>
+                                <p>DKK 340,00</p>
+                            </li>
+                            <li>
+                                <p>Forudbetaling</p>
+                                <p>DKK 16.000,00</p>
+                            </li>
+                        </ul>
+
+                    </li>
+
+
+                    <li class="section">
+                            <h4>Kort / Transport</h4>
+                            <div class="google-maps">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9000.80905370716!2d12.550175452818943!3d55.66808283849169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652537395ddd421%3A0x5f1e81a1039b8517!2zS8O4ZGJ5ZW4sIDE3MTEgS8O4YmVuaGF2bg!5e0!3m2!1sda!2sdk!4v1513170282732"
+                                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                    </li>
+
+
+            </ul>
 
         </div>
 
     </main>
 
-    
-
-
-                        
 
 
 
 
 
- 
+
+
+
+
+
 </body>
 
 
