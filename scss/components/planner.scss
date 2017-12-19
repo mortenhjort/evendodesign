@@ -178,7 +178,71 @@
     #c{
         flex: 1;
         #mainnav{
-            border-bottom: 1px solid $lightgrey;
+/*            border-bottom: 1px solid $lightgrey;*/
+            ul{
+                display: flex;
+                li{
+                    margin:0 1em;
+                    h4{
+                        margin: 1em 0 0;
+                        padding-bottom: .5em;
+                        border-bottom:4px solid white;
+
+                        
+                    } 
+                }
+                .active a h4{
+                    border-bottom:4px solid $orange;
+                }                
+            }
+        }
+
+        #hero{
+            margin:0;
+            position: relative;
+            background-size:cover;
+            background-position: top center;
+            height: 400px;
+
+            .ol{
+                position: absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                background:rgba(0,0,0,.5);
+                color:white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h1{
+                    font-weight: $regular;
+                    margin: 0;
+                    padding-bottom: .5em;
+                }
+
+                p{
+                    margin: 0;
+                    font-size: $fontsmall;
+                }
+                
+            }
+            #settings{
+                position: absolute;
+                top:1em;
+                right:1em;
+                img{
+                    width: 1.5em;
+                    background: white;
+                    padding: .5em;
+                    border-radius: 50px;
+                    opacity: .8;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
         }
 
      }
