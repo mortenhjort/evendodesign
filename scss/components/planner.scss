@@ -170,6 +170,17 @@
             }
 
         }
+        #addnewtimeline{
+            position: fixed;
+            background: $orange;
+            border-radius: 50px;
+            bottom:2em;
+            left:calc(700px - 1em);
+            img{
+                width: 2em;
+                padding: 1em;
+            }
+        }
 
         
     }
@@ -202,7 +213,7 @@
             position: relative;
             background-size:cover;
             background-position: top center;
-            height: 400px;
+            height: 300px;
 
             .ol{
                 position: absolute;
@@ -245,7 +256,28 @@
             }
         }
 
-     }
+        #emptystate{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            img{
+                width: 10em;
+            }
+        }
+
+        #overview{
+            .section{
+                padding: 2em 2em 0 2em;
+              h4{
+                 border-bottom: 1px solid $lightgrey;
+                 padding-bottom: 1em;
+              }
+             }
+           
+            
+        }
+    }
 }
 
 

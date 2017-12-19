@@ -53,6 +53,16 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/img\/icons\/arrow-right.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/arrow-right.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/icons\/basket.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -163,6 +173,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/icons\/plus-white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/plus-white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/icons\/search.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -208,6 +228,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/logos\/evendosmall.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/logos\/evendosmallgrey.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/logos\/evendosmallgrey.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

@@ -1,3 +1,5 @@
+// SEARCHCARDS
+
 .c {
     border: 1px solid $lightgrey;
     border-radius: $borderradius;
@@ -56,3 +58,39 @@
         }
     }
 }
+
+// PLANNER CARDS
+
+.pcards{
+    li a{
+        display: flex;
+        align-items: center;
+        .pimg img{
+            width: 200px;
+            border-radius: $borderradius;
+            padding-right: 2em;
+        }
+        .meta{
+            h4{
+                border:none!important;
+                margin:0;
+            }
+            h2{
+                margin:0;
+            }
+            img{
+                width: 2em;
+                padding: 1em;
+                background: $lightgrey;
+                border-radius: 50px;
+                margin-top: 1em;
+            }
+        }
+    }
+}
+
+
+
+
+
+// QUICKSEARCH CARDS
