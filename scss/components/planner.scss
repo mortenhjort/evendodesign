@@ -1,0 +1,166 @@
+
+#pgrid{
+    height: 100vh;
+    display: flex;
+    
+
+    // PROJECTS
+
+    #p{
+        background:$lightblue;
+        min-width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        header{
+            position: relative;
+            border-bottom: 1px solid $lightgrey;
+            .goback{
+                width: 2em;
+                position: absolute;
+                top:2em;
+                left: 1em;
+            }
+            .logo{
+                width: 8em;
+                position: absolute;
+                top:2em;
+                left:50%;
+                transform: translateX(-50%);
+            }
+            ul{
+                display: flex;
+                justify-content: space-around;
+                padding-top: 6em;
+                li{
+                    border-bottom:4px solid $lightblue;
+                    width: 100%;
+                    padding-bottom: .5em;
+                    text-align: center;
+                    font-size: $fontsmall;
+                    a{
+                        color:$grey;
+                        font-weight: $regular;
+                        display: block;
+                        &:hover{
+                            color:$black;
+                        }
+                    }
+                }
+                .active{
+                    border-bottom:4px solid $orange;
+                }
+                
+            }
+        }
+
+        #projects{
+            .sp{
+                border-bottom:1px solid $lightgrey;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 1em;
+                &:last-child{
+                    align-items: flex-end;
+                }
+                .cal{
+                    position: relative;
+                    .daywrap{
+                        position: absolute;
+                        text-align: center;
+                        top:14px;
+                        left:2px;
+                        width: 44px;
+                    }
+                    .day{
+                        color:#abaeb0;
+                        font-size: $fontmedium;
+                    }
+                    img{
+                        width: 3em;
+                    }
+                }
+                .name{
+                    .pname,.pday{
+                        padding: .3em 0 .3em 1em;
+                        margin:0;
+                    }
+                    .pname{
+                        color:$black;
+                    }
+                }
+            }
+            .open{
+                background: white;
+                /*padding: 1em 1em 0 1em;*/
+                .popen{
+                    width: 100%;
+                    padding: 1em 63px 0;
+                    h4,p{
+                        margin:0;
+                        font-size: $fontsmall;
+                    }
+                    p{
+                        padding-bottom: 1em;
+                    }
+                    
+                }
+            }
+        }
+        
+        #addnew{
+            padding: 1em;
+            border-top: 1px solid $lightgrey;
+            display: flex;
+            align-content: center;
+            flex-direction: row;
+            /*text-align: center;*/
+            h4{
+/*                margin: 0;*/
+                text-transform: none;
+            }
+            svg{
+                width: 1.5em;
+                height: 1.5em;
+                padding-right: 1em;
+                align-self: center;
+            }
+        }    
+    }
+
+
+    // TIMELINE
+
+    #t{
+        min-width: 400px;
+        border-left:1px solid $lightgrey;
+        border-right:1px solid $lightgrey;
+        padding: 1em;
+        overflow: scroll;
+
+        #timeline{
+            li{
+                font-size: $fontsmall;
+                font-weight: $regular;
+                color:$grey;
+                padding-bottom: 4em;
+                &:last-child{
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+
+    // CONTENTAREA
+    #c{
+
+     }
+}
+
+
+
+
+
+

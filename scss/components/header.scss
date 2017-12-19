@@ -1,0 +1,51 @@
+.gh{
+    border-bottom:1px solid $lightgrey;
+    padding-left:calc(#{$navwidth} + #{$bodymargin});
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+     
+    .logo{
+        width: 150px;
+        padding: 1em 0;
+        float:left; 
+        margin-right: 1em;
+    }
+
+    #globalbtns{
+        display: flex;
+        
+        button{
+            width: 150px;
+        }
+        li{
+         margin-right:1em;
+        }
+    }
+
+} 
+
+#gsearch{
+    align-items: flex-start;
+    flex-direction: column;
+} 
+
+#snav{
+    display: inherit;
+    li{
+        p{
+            margin:1em 2em 0 0; 
+            padding-bottom: .5em;
+            border-bottom:4px solid white;
+            
+            span{
+                color:$grey;
+                padding-left: .5em;
+            }
+        }
+    }
+    li.active p{
+        border-bottom:4px solid $orange;
+    }
+}

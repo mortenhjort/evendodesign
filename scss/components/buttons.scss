@@ -1,0 +1,41 @@
+/// BASE-BUTTONS
+
+.btn{
+    border-radius: 50px;
+    border:none;
+    padding: .6em .8em;
+    font-size: $fontbody;
+    cursor: pointer;
+    font-weight: $regular;
+}
+
+.btn-primary{
+    background: #f47721;
+    color:white;
+}
+
+.btn-secondary{
+    border:1px solid $lightgrey;
+    color:$black;
+    background: none;
+
+    &:hover{
+        color:$black;
+         background: $lightgrey;
+    }
+}
+
+
+/// BUTTON HELPERS
+
+.btn-full{
+    width: 100%;
+}
+
+.btn-big{
+    font-size: $fontlarge;
+}
+
+.btn-small{
+    font-size: $fontsmall;
+}

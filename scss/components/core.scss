@@ -1,0 +1,104 @@
+*{
+    outline: none;
+    
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;    
+}
+
+
+h1{
+    font-size: $fontlarge;
+    font-weight: $bold;
+    line-height: 1.3em;
+
+}
+
+h2{
+    font-size: $fontmedium;
+    font-weight: $regular;
+}
+ 
+h3{
+    font-size: $fontbody;
+    font-weight: $regular;
+}
+
+h4{
+    font-size: $fontsmall;
+    font-weight: $regular;
+    text-transform: uppercase;
+    color:$grey;
+}
+
+
+
+p{
+    font-weight: $regular;
+    font-size: $fontbody;
+    line-height: 1.5em;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+
+a:link,a:visited,a:hover,a:active  {
+    color:initial;
+    text-decoration: none;
+}
+
+.show{display: block!important}
+
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    width:100%;
+}
+
+
+/// MAIN CONTENT-AREA AND WIDTH-CONTROL
+
+#content{ 
+    margin:2em;
+    margin-left:calc(#{$navwidth} + #{$bodymargin});
+    .widthmedium{
+        width: 100%;
+        margin:0 auto;
+        @media only screen and (min-width: 1300px) {
+            width: 85%;
+        }
+    }
+} 
+
+
+
+/// RESPONSIVE MAPS
+
+.google-maps {
+    position: relative;
+    padding-bottom: 35%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}

@@ -1,0 +1,544 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Evendo V3</title>
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <!-- jQuery only for demo purpose  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <sidebar id="right">
+    
+        <nav>
+    
+            <ul class="top">
+    
+                <li>
+                    <a href="#" id="navmenu">
+                        <img src="img/icons/menu.svg" alt="Menu">
+                        <h3>Menu</h3>
+                    </a>
+                </li>
+    
+    
+    
+    
+    
+    
+                <li>
+                    <a href="#">
+                        <img src="img/icons/search.svg" alt="Search">
+                        <h3>Search</h3>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <img src="img/icons/history.svg" alt="History">
+                        <h3>History</h3>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <img src="img/icons/fav.svg" alt="Favourites">
+                        <h3>Liked</h3>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <img src="img/icons/basket.svg" alt="Basket">
+                        <h3>Basket</h3>
+                    </a>
+                </li>
+    
+            </ul>
+    
+    
+            <ul class="bottom">
+    
+    
+    
+                <li>
+                    <a href="planner.html">
+                        <img src="img/icons/event.svg" alt="Event">
+                        <h3>Planner</h3>
+                    </a>
+                </li>
+                <li style="background-color:grey;">
+                  <a href="#">
+                      <h3>&nbsp;</h3>
+                     </a>
+                 </li>
+    
+            </ul>
+    
+        </nav>
+    
+    
+    </sidebar>
+    
+    
+    
+    
+    
+    
+    
+    <div id="menu">
+    
+        <div class="wrap">
+    
+    
+    
+    
+    
+    
+            <button class="btn btn-secondary btn-full">My Evendo</button>
+    
+    
+    
+    
+            <ul id="menulist">
+                <li class="menuitem" id="subtoggle">
+                    <a href="#">
+                        Anledninger
+                        <span>
+                            <img src="img/icons/chevron-down.svg">
+                        </span>
+                    </a>
+    
+                    <ul class="subitems">
+                        <li class="sub">
+                            <a href="#">Se alle</a>
+                        </li>
+                        <li class="sub">
+                            <a href="productdetailpage.html">Jul</a>
+                        </li>
+                        <li class="sub">
+                            <a href="search.html">Fest i egne lokaler</a>
+                        </li>
+                        <li class="sub">
+                            <a href="#">Teambonding</a>
+                        </li>
+                        <li class="sub">
+                            <a href="#">Teambuilding</a>
+                        </li>
+                        <li class="sub">
+                            <a href="#">Fredagsbar</a>
+                        </li>
+                        <li class="sub">
+                            <a href="#">Pigetur</a>
+                        </li>
+                        <li class="sub">
+                            <a href="#">Polterabend</a>
+                        </li>
+                        <li class="sub">
+                            <a href="#">Sommerfest</a>
+                        </li>
+                    </ul>
+    
+    
+    
+    
+                </li>
+                <li class="menuitem">
+                    <a href="#">
+                        Pakkeforslag
+                        <span>
+                            <img src="img/icons/chevron-down.svg">
+                        </span>
+                    </a>
+                </li>
+                <li class="menuitem">
+                    <a href="#">
+                        Aktiviteter
+                        <span>
+                            <img src="img/icons/chevron-down.svg">
+                        </span>
+                    </a>
+                </li>
+                <li class="menuitem">
+                    <a href="#">
+                        Transport
+                        <span>
+                            <img src="img/icons/chevron-down.svg">
+                        </span>
+                    </a>
+                </li>
+    
+    
+                <li class="menuitem">
+                    <a href="#">
+                        Festudlejning
+                        <span>
+                            <img src="img/icons/chevron-down.svg">
+                        </span>
+                    </a>
+                </li>
+                <li class="menuitem">
+                    <a href="#">
+                        Mad & Drikke
+                        <span>
+                            <img src="img/icons/chevron-down.svg">
+                        </span>
+                    </a>
+                </li>
+                <li class="menuitem">
+                    <a href="#">
+                        Lokaler
+                        <span>
+                            <img src="img/icons/chevron-down.svg">
+                        </span>
+                    </a>
+                </li>
+                <li class="menuitem">
+                    <a href="#">
+                        Overnatning
+                        <span>
+                            <img src="img/icons/chevron-down.svg">
+                        </span>
+                    </a>
+                </li class="menuitem">
+    
+    
+                <li class="menuitem">
+                    <a href="#">
+                        Om Evendo
+                    </a>
+                </li>
+                <li class="menuitem">
+                    <a href="#">
+                        Kontakt
+                    </a>
+                </li>
+            </ul>
+    
+    
+        </div>
+    
+    </div>
+    
+    
+    
+    <!-- TOGGLE MENU -->
+    <script>
+        $('#navmenu').on('click', function () {
+            $('#menu').toggleClass('menuopen');
+    
+        })
+    </script>
+    
+    
+    
+    <!-- TOGGLE SUBMENU -->
+    <script>
+        $('#subtoggle').on('click', function () {
+            $('.subitems').toggleClass('show');
+    
+        })
+    </script>
+
+
+
+
+
+
+
+    <header class="gh" id="gsearch">
+    
+        <a href="#">
+            <img class="logo" src="img/logos/evendo.svg" alt="Evendo logo">
+        </a>
+    
+    
+            <ul id="snav">
+                <li class="active"><a href="#"><p>Aktiviteter<span>79</span></p></a></li>
+                <li class=""><a href="#"><p>Pakkeforslag<span>7</span></p></a></li>
+                <li class=""><a href="#"><p>Transport<span>14</span></p></a></li>
+                <li class=""><a href="#"><p>Festudlejning<span>6</span></p></a></li>
+                <li class=""><a href="#"><p>Mad & Drikke<span>12</span></p></a></li>
+            </ul>
+    
+    </header>
+    
+    
+
+
+
+
+    <main id="content">
+
+
+        <div class="widthmedium">
+
+
+
+        <div id="filters">
+            <div class="left">
+                <button class="btn btn-secondary btn-small">Categories</button>
+                <button class="btn btn-secondary btn-small">Duration</button>
+                <button class="btn btn-secondary btn-small">Pricerange</button>
+            </div>
+            <div class="right">
+                <button class="btn btn-secondary btn-small">Show on map</button>
+                <button class="btn btn-secondary btn-small">Sort By</button>
+            </div>
+
+        </div>
+
+
+
+
+        <ul class="grid">
+
+            <li class="c">
+            
+                    <div class="pi">
+                       <img class="img" src="https://d3ulizuhtuf022.cloudfront.net/images/555/752164ffc09a4db5991ff30678c5188d.png">
+                       <div class="pt">Evendo-pakke</div>
+                    </div>
+                    
+                    <section class="sub">
+                            <p class="title ellipsis">Partybus - 1 times kørsel inkl. drikkevarer, København</p>
+                            <p class="info">Musik, fest og farver – alt sammen proppet ind i en partybus med bar og dansegulv.</p>
+                            <p class="info price">From
+                                    <span>DKK 899,00</span> / person</p>
+                           
+                           <div class="prew">
+                                    <p class="info price">Startup price <span>DKK 4125,00</span></p>
+                                     <ul class="rating"><li class="full"></li><li class="full"></li><li class="full"></li><li class="half"></li><li class="empty"></li></ul>
+                            </div>
+                    </section>
+            </li>
+            <li class="c">
+                        
+                                <div class="pi">
+                                   <img class="img" src="https://d3ulizuhtuf022.cloudfront.net/images/555/752164ffc09a4db5991ff30678c5188d.png">
+                                   <div class="pt">Evendo-pakke</div>
+                                </div>
+                                
+                                <section class="sub">
+                                        <p class="title ellipsis">Partybus - 1 times kørsel inkl. drikkevarer, København</p>
+                                        <p class="info">Musik, fest og farver – alt sammen proppet ind i en partybus med bar og dansegulv.</p>
+                                        <p class="info price">From
+                                                <span>DKK 899,00</span> / person</p>
+                                       
+                                       <div class="prew">
+                                                <p class="info price">Startup price <span>DKK 4125,00</span></p>
+                                                 <ul class="rating"><li class="full"></li><li class="full"></li><li class="full"></li><li class="half"></li><li class="empty"></li></ul>
+                                        </div>
+                                </section>
+                        </li>
+            <li class="c">
+                                    
+                                            <div class="pi">
+                                               <img class="img" src="https://d3ulizuhtuf022.cloudfront.net/images/555/752164ffc09a4db5991ff30678c5188d.png">
+                                               <div class="pt">Evendo-pakke</div>
+                                            </div>
+                                            
+                                            <section class="sub">
+                                                    <p class="title ellipsis">Partybus - 1 times kørsel inkl. drikkevarer, København</p>
+                                                    <p class="info">Musik, fest og farver – alt sammen proppet ind i en partybus med bar og dansegulv.</p>
+                                                    <p class="info price">From
+                                                            <span>DKK 899,00</span> / person</p>
+                                                   
+                                                   <div class="prew">
+                                                            <p class="info price">Startup price <span>DKK 4125,00</span></p>
+                                                             <ul class="rating"><li class="full"></li><li class="full"></li><li class="full"></li><li class="half"></li><li class="empty"></li></ul>
+                                                    </div>
+                                            </section>
+                                    </li>
+            <li class="c">
+                                                
+                                                        <div class="pi">
+                                                           <img class="img" src="https://d3ulizuhtuf022.cloudfront.net/images/555/752164ffc09a4db5991ff30678c5188d.png">
+                                                           <div class="pt">Evendo-pakke</div>
+                                                        </div>
+                                                        
+                                                        <section class="sub">
+                                                                <p class="title ellipsis">Partybus - 1 times kørsel inkl. drikkevarer, København</p>
+                                                                <p class="info">Musik, fest og farver – alt sammen proppet ind i en partybus med bar og dansegulv.</p>
+                                                                <p class="info price">From
+                                                                        <span>DKK 899,00</span> / person</p>
+                                                               
+                                                               <div class="prew">
+                                                                        <p class="info price">Startup price <span>DKK 4125,00</span></p>
+                                                                         <ul class="rating"><li class="full"></li><li class="full"></li><li class="full"></li><li class="half"></li><li class="empty"></li></ul>
+                                                                </div>
+                                                        </section>
+                                                </li>
+            <li class="c">
+                                                            
+                                                                    <div class="pi">
+                                                                       <img class="img" src="https://d3ulizuhtuf022.cloudfront.net/images/555/752164ffc09a4db5991ff30678c5188d.png">
+                                                                       <div class="pt">Evendo-pakke</div>
+                                                                    </div>
+                                                                    
+                                                                    <section class="sub">
+                                                                            <p class="title ellipsis">Partybus - 1 times kørsel inkl. drikkevarer, København</p>
+                                                                            <p class="info">Musik, fest og farver – alt sammen proppet ind i en partybus med bar og dansegulv.</p>
+                                                                            <p class="info price">From
+                                                                                    <span>DKK 899,00</span> / person</p>
+                                                                           
+                                                                           <div class="prew">
+                                                                                    <p class="info price">Startup price <span>DKK 4125,00</span></p>
+                                                                                     <ul class="rating"><li class="full"></li><li class="full"></li><li class="full"></li><li class="half"></li><li class="empty"></li></ul>
+                                                                            </div>
+                                                                    </section>
+                                                            </li>
+            <li class="c">
+                                                                        
+                                                                                <div class="pi">
+                                                                                   <img class="img" src="https://d3ulizuhtuf022.cloudfront.net/images/555/752164ffc09a4db5991ff30678c5188d.png">
+                                                                                   <div class="pt">Evendo-pakke</div>
+                                                                                </div>
+                                                                                
+                                                                                <section class="sub">
+                                                                                        <p class="title ellipsis">Partybus - 1 times kørsel inkl. drikkevarer, København</p>
+                                                                                        <p class="info">Musik, fest og farver – alt sammen proppet ind i en partybus med bar og dansegulv.</p>
+                                                                                        <p class="info price">From
+                                                                                                <span>DKK 899,00</span> / person</p>
+                                                                                       
+                                                                                       <div class="prew">
+                                                                                                <p class="info price">Startup price <span>DKK 4125,00</span></p>
+                                                                                                 <ul class="rating"><li class="full"></li><li class="full"></li><li class="full"></li><li class="half"></li><li class="empty"></li></ul>
+                                                                                        </div>
+                                                                                </section>
+                                                                        </li>
+            <li class="c">
+                                                                                    
+                                                                                            <div class="pi">
+                                                                                               <img class="img" src="https://d3ulizuhtuf022.cloudfront.net/images/555/752164ffc09a4db5991ff30678c5188d.png">
+                                                                                               <div class="pt">Evendo-pakke</div>
+                                                                                            </div>
+                                                                                            
+                                                                                            <section class="sub">
+                                                                                                    <p class="title ellipsis">Partybus - 1 times kørsel inkl. drikkevarer, København</p>
+                                                                                                    <p class="info">Musik, fest og farver – alt sammen proppet ind i en partybus med bar og dansegulv.</p>
+                                                                                                    <p class="info price">From
+                                                                                                            <span>DKK 899,00</span> / person</p>
+                                                                                                   
+                                                                                                   <div class="prew">
+                                                                                                            <p class="info price">Startup price <span>DKK 4125,00</span></p>
+                                                                                                             <ul class="rating"><li class="full"></li><li class="full"></li><li class="full"></li><li class="half"></li><li class="empty"></li></ul>
+                                                                                                    </div>
+                                                                                            </section>
+                                                                                    </li>
+            <li class="c">
+                                                                                                
+                                                                                                        <div class="pi">
+                                                                                                           <img class="img" src="https://d3ulizuhtuf022.cloudfront.net/images/555/752164ffc09a4db5991ff30678c5188d.png">
+                                                                                                           <div class="pt">Evendo-pakke</div>
+                                                                                                        </div>
+                                                                                                        
+                                                                                                        <section class="sub">
+                                                                                                                <p class="title ellipsis">Partybus - 1 times kørsel inkl. drikkevarer, København</p>
+                                                                                                                <p class="info">Musik, fest og farver – alt sammen proppet ind i en partybus med bar og dansegulv.</p>
+                                                                                                                <p class="info price">From
+                                                                                                                        <span>DKK 899,00</span> / person</p>
+                                                                                                               
+                                                                                                               <div class="prew">
+                                                                                                                        <p class="info price">Startup price <span>DKK 4125,00</span></p>
+                                                                                                                         <ul class="rating"><li class="full"></li><li class="full"></li><li class="full"></li><li class="half"></li><li class="empty"></li></ul>
+                                                                                                                </div>
+                                                                                                        </section>
+                                                                                                </li>
+            <li class="c">
+                                                                                                            
+                                                                                                                    <div class="pi">
+                                                                                                                       <img class="img" src="https://d3ulizuhtuf022.cloudfront.net/images/555/752164ffc09a4db5991ff30678c5188d.png">
+                                                                                                                       <div class="pt">Evendo-pakke</div>
+                                                                                                                    </div>
+                                                                                                                    
+                                                                                                                    <section class="sub">
+                                                                                                                            <p class="title ellipsis">Partybus - 1 times kørsel inkl. drikkevarer, København</p>
+                                                                                                                            <p class="info">Musik, fest og farver – alt sammen proppet ind i en partybus med bar og dansegulv.</p>
+                                                                                                                            <p class="info price">From
+                                                                                                                                    <span>DKK 899,00</span> / person</p>
+                                                                                                                           
+                                                                                                                           <div class="prew">
+                                                                                                                                    <p class="info price">Startup price <span>DKK 4125,00</span></p>
+                                                                                                                                     <ul class="rating"><li class="full"></li><li class="full"></li><li class="full"></li><li class="half"></li><li class="empty"></li></ul>
+                                                                                                                            </div>
+                                                                                                                    </section>
+                                                                                                            </li>
+            <li class="c">
+                                                                                                                        
+                                                                                                                                <div class="pi">
+                                                                                                                                   <img class="img" src="https://d3ulizuhtuf022.cloudfront.net/images/555/752164ffc09a4db5991ff30678c5188d.png">
+                                                                                                                                   <div class="pt">Evendo-pakke</div>
+                                                                                                                                </div>
+                                                                                                                                
+                                                                                                                                <section class="sub">
+                                                                                                                                        <p class="title ellipsis">Partybus - 1 times kørsel inkl. drikkevarer, København</p>
+                                                                                                                                        <p class="info">Musik, fest og farver – alt sammen proppet ind i en partybus med bar og dansegulv.</p>
+                                                                                                                                        <p class="info price">From
+                                                                                                                                                <span>DKK 899,00</span> / person</p>
+                                                                                                                                       
+                                                                                                                                       <div class="prew">
+                                                                                                                                                <p class="info price">Startup price <span>DKK 4125,00</span></p>
+                                                                                                                                                 <ul class="rating"><li class="full"></li><li class="full"></li><li class="full"></li><li class="half"></li><li class="empty"></li></ul>
+                                                                                                                                        </div>
+                                                                                                                                </section>
+                                                                                                                        </li>
+
+        </ul>
+
+        <ul class="pagination">
+            <li>
+                <a href="#">«</a>
+            </li>
+            <li>
+                <a href="#">1</a>
+            </li>
+            <li>
+                <a class="active" href="#">2</a>
+            </li>
+            <li>
+                <a href="#">3</a>
+            </li>
+            <li>
+                <a href="#">4</a>
+            </li>
+            <li>
+                <a href="#">5</a>
+            </li>
+            <li>
+                <a href="#">6</a>
+            </li>
+            <li>
+                <a href="#">7</a>
+            </li>
+            <li>
+                <a href="#">»</a>
+            </li>
+        </ul>
+
+
+
+    </div>
+    </main>
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>

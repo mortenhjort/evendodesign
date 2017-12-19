@@ -1,0 +1,231 @@
+<sidebar id="right">
+
+    <nav>
+
+        <ul class="top">
+
+            <li>
+                <a href="#" id="navmenu">
+                    <img src="img/icons/menu.svg" alt="Menu">
+                    <h3>Menu</h3>
+                </a>
+            </li>
+
+
+
+
+
+
+            <li>
+                <a href="#">
+                    <img src="img/icons/search.svg" alt="Search">
+                    <h3>Search</h3>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="img/icons/history.svg" alt="History">
+                    <h3>History</h3>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="img/icons/fav.svg" alt="Favourites">
+                    <h3>Liked</h3>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="img/icons/basket.svg" alt="Basket">
+                    <h3>Basket</h3>
+                </a>
+            </li>
+
+        </ul>
+
+
+        <ul class="bottom">
+
+
+
+            <li>
+                <a href="planner.html">
+                    <img src="img/icons/event.svg" alt="Event">
+                    <h3>Planner</h3>
+                </a>
+            </li>
+            <li style="background-color:grey;">
+              <a href="#">
+                  <h3>&nbsp;</h3>
+                 </a>
+             </li>
+
+        </ul>
+
+    </nav>
+
+
+</sidebar>
+
+
+
+
+
+
+
+<div id="menu">
+
+    <div class="wrap">
+
+
+
+
+
+
+        <button class="btn btn-secondary btn-full">My Evendo</button>
+
+
+
+
+        <ul id="menulist">
+            <li class="menuitem" id="subtoggle">
+                <a href="#">
+                    Anledninger
+                    <span>
+                        <img src="img/icons/chevron-down.svg">
+                    </span>
+                </a>
+
+                <ul class="subitems">
+                    <li class="sub">
+                        <a href="#">Se alle</a>
+                    </li>
+                    <li class="sub">
+                        <a href="productdetailpage.html">Jul</a>
+                    </li>
+                    <li class="sub">
+                        <a href="search.html">Fest i egne lokaler</a>
+                    </li>
+                    <li class="sub">
+                        <a href="#">Teambonding</a>
+                    </li>
+                    <li class="sub">
+                        <a href="#">Teambuilding</a>
+                    </li>
+                    <li class="sub">
+                        <a href="#">Fredagsbar</a>
+                    </li>
+                    <li class="sub">
+                        <a href="#">Pigetur</a>
+                    </li>
+                    <li class="sub">
+                        <a href="#">Polterabend</a>
+                    </li>
+                    <li class="sub">
+                        <a href="#">Sommerfest</a>
+                    </li>
+                </ul>
+
+
+
+
+            </li>
+            <li class="menuitem">
+                <a href="#">
+                    Pakkeforslag
+                    <span>
+                        <img src="img/icons/chevron-down.svg">
+                    </span>
+                </a>
+            </li>
+            <li class="menuitem">
+                <a href="#">
+                    Aktiviteter
+                    <span>
+                        <img src="img/icons/chevron-down.svg">
+                    </span>
+                </a>
+            </li>
+            <li class="menuitem">
+                <a href="#">
+                    Transport
+                    <span>
+                        <img src="img/icons/chevron-down.svg">
+                    </span>
+                </a>
+            </li>
+
+
+            <li class="menuitem">
+                <a href="#">
+                    Festudlejning
+                    <span>
+                        <img src="img/icons/chevron-down.svg">
+                    </span>
+                </a>
+            </li>
+            <li class="menuitem">
+                <a href="#">
+                    Mad & Drikke
+                    <span>
+                        <img src="img/icons/chevron-down.svg">
+                    </span>
+                </a>
+            </li>
+            <li class="menuitem">
+                <a href="#">
+                    Lokaler
+                    <span>
+                        <img src="img/icons/chevron-down.svg">
+                    </span>
+                </a>
+            </li>
+            <li class="menuitem">
+                <a href="#">
+                    Overnatning
+                    <span>
+                        <img src="img/icons/chevron-down.svg">
+                    </span>
+                </a>
+            </li class="menuitem">
+
+
+            <li class="menuitem">
+                <a href="#">
+                    Om Evendo
+                </a>
+            </li>
+            <li class="menuitem">
+                <a href="#">
+                    Kontakt
+                </a>
+            </li>
+        </ul>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- TOGGLE MENU -->
+<script>
+    $('#navmenu').on('click', function () {
+        $('#menu').toggleClass('menuopen');
+
+    })
+</script>
+
+
+
+<!-- TOGGLE SUBMENU -->
+<script>
+    $('#subtoggle').on('click', function () {
+        $('.subitems').toggleClass('show');
+
+    })
+</script>

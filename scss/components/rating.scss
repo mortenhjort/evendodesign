@@ -1,0 +1,32 @@
+$starsize:1.5em;
+$starsizebig:2em;
+
+
+.rating{
+
+    li{
+        display: inline;
+      &::before{
+        background-size: $starsize $starsize; 
+        display: inline-block;
+        width: $starsize; 
+        height: $starsize;
+        content:"";
+      } 
+    }
+    .empty::before{
+        background-image: url(../img/rating/empty.svg);
+    }
+    .half::before{
+        background-image: url(../img/rating/half.svg);
+    }
+    .full::before{
+        background-image: url(../img/rating/full.svg);
+    }       
+}
+
+.big li::before{
+    background-size: $starsizebig $starsizebig; 
+    width: $starsizebig; 
+    height: $starsizebig;
+}

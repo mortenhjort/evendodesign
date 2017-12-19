@@ -1,0 +1,194 @@
+.pd{
+    display: flex;
+    h2{
+        text-transform: uppercase;
+        margin-top:0;
+    }
+    article{
+        margin: 1em 0 2em;
+        &:first-child{
+            margin-top: 0;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+        p{
+            margin: 0;
+        }
+    }
+    .subtext{
+        max-width: 700px;
+    }
+    
+    .right{
+        flex:0 0 500px;
+        #book{
+            border:1px solid $lightgrey;
+            margin-left: 3em;
+            border-radius: $borderradius;
+            .pimg{
+                width: 100%;
+                border-radius: .25em .25em 0 0;
+            }
+            .meta{
+                padding:2em;
+                text-align: center;
+                h3{
+                    color: $grey;
+                    span{
+                        color:$black;
+                        font-weight: $bold;
+                    }
+                    &:first-child{
+                        margin-top: 0;
+                    }
+                }
+                h4{
+                    padding: 1em 0 0 ;
+                    margin-bottom: .5em;
+                }
+                #options{
+                    margin-top: 1em;
+                    display: inline-flex;
+
+                    a{
+                        font-size: $fontsmall;
+                        color:$blue;
+                        display: flex;
+                        &:first-child{
+                            padding-right: 3em;
+                        }
+                        &:hover{
+                            opacity: .8;
+                        }
+                       
+                        img{
+                            width: 1.2em;
+                            align-self: center;
+                            padding-right: .5em;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+   
+    #fullwidth{
+        width: 100%;
+    
+    }
+    
+    .ratings{
+        .hrating{
+            display: flex;
+            align-items: center;
+            h1{
+                padding-right: 1em;
+                margin:0;
+            }
+        } 
+        .overall{
+/*            border-top:1px solid $lightgrey;*/
+/*            border-bottom:1px solid $lightgrey;*/
+            padding: 1em 0;
+            margin: 1em 0;
+
+            ul li h4{
+                margin:.5em 0;
+            }
+        }
+    }
+}
+
+#linkrelated{
+    margin-top: 0;
+}
+
+.listcenter{
+    align-items: center;
+}
+
+
+
+#productmenu{
+    border-bottom:1px solid $grey;
+    width: 100%;
+    display: flex;
+    /*justify-content: space-between;*/
+    text-transform: uppercase;
+     
+    h4{
+        margin-bottom: .5em;
+        padding-right:2em;
+        &:hover{
+            color:$black;
+        }
+    }
+}
+
+.plist{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+ 
+     li{
+        box-sizing: border-box;
+    }
+    > li:nth-child(odd){
+        float: left;
+        width: 220px;
+        p{
+            font-weight: $regular;
+        }
+    }
+    > li:nth-child(even){
+        width: calc(100% - 220px);
+        word-break: keep-all;
+    }
+}
+
+
+
+// SECTION SPACING AND LINE
+.psec{
+    padding:3em 0;
+    border-bottom:1px solid $lightgrey;
+    &:last-child{
+        border-bottom: none;
+    }
+    p:last-child{
+        margin-bottom: 0;
+    }
+}
+
+
+// USERREVIEWS
+
+.userreview{
+    .reviewheader{
+        h3,h4{
+            margin:.5em 0;
+        }
+    }
+    
+}
+
+
+// MENU
+.fooditem{
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    p{
+        margin-top: 0;
+    }
+    h3{
+        font-weight: $bold;
+    }
+    h4{
+        font-size: $fontbody;
+    }
+}

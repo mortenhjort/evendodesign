@@ -1,0 +1,19 @@
+ul.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin:2em 0 1em 0;
+    li{
+        a{
+            color: $black;
+            padding: .5em 1em;
+            transition: background-color .3s;
+            border-radius: $borderradius;
+            &:hover:not(.active) {background-color: $lightgrey;}
+        }
+        a.active{
+            background-color: $grey;
+            color: white;
+        }
+    }
+}

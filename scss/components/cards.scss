@@ -1,0 +1,58 @@
+.c {
+    border: 1px solid $lightgrey;
+    border-radius: $borderradius;
+    width: 100%;
+    .pi {
+        position: relative;
+        .img {
+            width: 100%;
+        }
+        .pt{
+            position: absolute;
+            bottom:1em;
+            left:1em;
+            background: $orange;
+            font-size: $fontsmall;
+            font-weight: $bold;
+            color:white;
+            border-radius: 50px;
+            display: flex;
+            padding-right: 1.25em;
+            align-items: center;
+            text-transform: uppercase;
+            &::before{
+                background:white url(../img/logos/evendosmall.svg) no-repeat;
+                background-size: 25px;
+                background-position: 8px 8px;
+                display: inline-block;
+                width: 20px;
+                margin-right: .75em;
+                border-radius:50px;
+                padding: .8em;
+                height: 20px;
+                content:"";
+
+            }
+        }
+    }
+    .sub {
+        margin: 1em;
+        .prew{
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            flex-wrap: wrap;
+            
+        }
+        .info {
+            color: $grey;
+            span {
+            color: black;
+            font-weight: $bold;
+          }
+        }
+        .price{
+            margin: .25em;
+        }
+    }
+}
