@@ -4,29 +4,79 @@ $widgetpadding:5em;
     position: relative;
     height: 90vh;
     margin-left:$navwidth;
-    background: url(../img/logos/hero-dots.svg) 50% / 80% no-repeat;
+    background: url(../img/logos/hero-dots.svg) 50% / 96% no-repeat;
 
-    #widget{
+    #hw{
         position: absolute;
-        background: white;
-        border:1px solid $lightgrey;
         left:$widgetpadding;
         bottom:$widgetpadding;
         right:$widgetpadding;
-        padding: 1em;
+        
+        h1{
+            color:white;
+            font-size: 70px;
+            font-weight: $regular;
+            @media only screen and (max-width: 1100px) {
+                span{
+                    display: block;
+                }
+            }
 
-        .forms{
-            display: flex;
-            justify-content: space-between;
-            > li{
-                padding: 0 .5em;
-                flex: 1;
-                &:first-child{
-                    padding-left: 0;
+        }
+        #widget{
+            background: white;
+            border:1px solid $lightgrey;
+            padding: 1em;
+    
+            .forms{
+                display: flex;
+                justify-content: space-between;
+                > li{
+                    padding: 0 .5em;
+                    flex: 1;
+                    &:first-child{
+                        padding-left: 0;
+                    }
+                    &:last-child{
+                        padding-right: 0;
+                    }
                 }
-                &:last-child{
-                    padding-right: 0;
-                }
+            }
+        }
+        button{
+            margin-top: 1em;
+        }
+    }
+}
+
+.fp{
+    .psec{
+        border-bottom: none;
+    }
+    .btn-big{
+        margin-top: 1em;
+    }
+    .big{
+        font-size: $fontmassive;
+        color: $grey;
+    }
+    .gethelp{
+        display: flex;
+        justify-content: center;
+        article{
+            border:1px solid $lightgrey;
+            border-radius: $borderradius;
+            // flex-grow: 1;
+            margin: 0 1em;
+            padding: 3em;
+            &:first-child{
+                margin-left: 0;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            img{
+                width: 7em;
             }
         }
     }

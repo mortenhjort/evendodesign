@@ -60,6 +60,11 @@ a:link,a:visited,a:hover,a:active  {
     text-decoration: none;
 }
 
+
+
+
+// Helpers
+
 .show{display: block!important}
 
 .ellipsis{
@@ -72,6 +77,10 @@ a:link,a:visited,a:hover,a:active  {
 
 .padding{
     padding: 1em;
+}
+
+.tc{
+    text-align: center;
 }
 
 
