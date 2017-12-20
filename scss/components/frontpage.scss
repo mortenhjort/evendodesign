@@ -50,8 +50,14 @@ $widgetpadding:5em;
 }
 
 .fp{
-    .psec{
-        border-bottom: none;
+
+    h3{
+        font-size: $fontlarge;
+        margin-top: 0;
+    }
+
+    .fpsec{
+        margin:8em 0
     }
     .btn-big{
         margin-top: 1em;
@@ -66,7 +72,6 @@ $widgetpadding:5em;
         article{
             border:1px solid $lightgrey;
             border-radius: $borderradius;
-            // flex-grow: 1;
             margin: 0 1em;
             padding: 3em;
             &:first-child{
@@ -77,6 +82,61 @@ $widgetpadding:5em;
             }
             img{
                 width: 7em;
+            }
+            h5{
+                margin:2em 0 0;
+                font-weight: $regular;
+                font-size: $fontbody;
+            }
+        }
+    }
+    .fpblock{
+        position: relative;
+        background-color: $orange;
+        background-size: cover;
+        background-position: top center;
+        background-blend-mode: multiply;
+        height: 500px;
+        .meta{
+            color:white;
+            padding: 3em;
+            p{
+                width: 60%;
+            }
+        }
+        
+    }
+    .img{
+        display: flex;
+        justify-content: center;
+        
+        &.left span{
+            padding-left: 7em;
+        }
+
+        &.right span{
+            padding-right: 7em;
+        }
+        img{
+            width: 30%;
+            align-self: center;
+        }
+    }
+    #pfor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li{
+            margin:1em;
+            flex: 1 1 calc(33% - 2em;
+            &:nth-child(3n){
+                margin-right: 0;
+            }
+            &:nth-child(3n + 1){
+                margin-left: 0;
+            }
+            img{
+                width: 100%;
             }
         }
     }

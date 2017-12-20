@@ -40,6 +40,16 @@
     }
 }
 
+.btn-stroke-white{
+    border:1px solid white;
+    color:white;
+    background: none;
+    &:hover{
+         color:$black;
+         background: white;
+    }
+}
+
 
 /// BUTTON HELPERS
 
