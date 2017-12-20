@@ -128,6 +128,7 @@ $widgetpadding:5em;
         justify-content: space-between;
         li{
             margin:1em;
+            position: relative;
             flex: 1 1 calc(33% - 2em;
             &:nth-child(3n){
                 margin-right: 0;
@@ -138,6 +139,49 @@ $widgetpadding:5em;
             img{
                 width: 100%;
             }
+            .ol{
+                position: absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+                opacity: .8;
+            }
+            .c1{
+                background: linear-gradient(to right, #4b134f, #c94b4b);
+            }
+            .c2{
+                background: linear-gradient(to right, #b20a2c, #fffbd5); 
+                
+            }
+            .c3{
+                background: linear-gradient(to right, #96c93d, #00b09b);
+                
+            }
+            .c4{
+                background: linear-gradient(to right, #F3F9A7, #CAC531); 
+                
+            }
+            .c5{
+                background: linear-gradient(to right, #0575E6, #00F260); 
+                
+            }
+            .c6{
+                background: linear-gradient(to right, #f7b733, #fc4a1a); 
+                
+            }
+            h3{
+                color:white;
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%, -50%)
+            }
         }
+    }
+    #clients{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 3em;
     }
 }
