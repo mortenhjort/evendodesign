@@ -20,7 +20,6 @@
 
 select {
     border: 1px solid $lightgrey;
-    background: transparent;
     padding: .75em;
     font-size: $fontbody;
     font-weight: $regular;
@@ -28,5 +27,5 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url(../img/icons/chevron-down.svg) calc(100% - 1em) / 1em no-repeat;
+    background: url(../img/icons/chevron-down.svg) calc(100% - 1em) / 1em no-repeat white;
   }
