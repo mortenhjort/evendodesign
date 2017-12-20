@@ -2,7 +2,7 @@
 
 <html lang="en">
 
-<head> 
+<head>
     <meta charset="utf-8">
     <title>Evendo V3</title>
     <meta name="description" content="">
@@ -125,19 +125,49 @@
 
             <!-- ADD NEW PROJECT -->
 
-            <a href="#">
-                <div id="addnew">
+            <div id="addnew" class="addnewfix">
 
-                    <svg version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g fill="#787B7D">
-                            <path d="M14,8h-6v6h-2v-6h-6v-2h6v-6h2v6h6v2Z" transform="translate(5, 5)"></path>
-                            <path fill="none" d="M0,0h24v24h-24Z"></path>
-                        </g>
-                    </svg>
-                    <h4>Add new</h4>
+                <ul class="forms">
+                    <li>
+                        <label>Titel</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label>Vælg anledning</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label>Vælg By</label>
+                        <input type="text">
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li>
+                                <label>Vælg dato</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label>Antal deltagere</label>
+                                <input type="text">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+
+                <div class="action">
+                    <button class="btn btn-primary">Create</button>
+                    <a href="#">
+                        <h4>Cancel</h4>
+                    </a>
 
                 </div>
-            </a>
+
+
+            </div>
 
 
 
@@ -157,64 +187,124 @@
 
         <div id="t">
 
-            <ul id="timeline">
-                <li>07:00</li>
-                <li>08:00</li>
-                <li>09:00</li>
-                <li>10:00</li>
-                <li>11:00</li>
-                <li>12:00</li>
-                <li>13:00</li>
-                <li>14:00</li>
-                <li>15:00</li>
-                <li>16:00</li>
-                <li>17:00</li>
-                <li>18:00</li>
-                <li>19:00</li>
-                <li>20:00</li>
-                <li>21:00</li>
-                <li>22:00</li>
-                <li>23:00</li>
-                <li>24:00</li>
-                <li>00:00</li>
-                <li>01:00</li>
-                <li>02:00</li>
-                <li>03:00</li>
-                <li>04:00</li>
-                <li>05:00</li>
-                <li>06:00</li>
-            </ul>
+            <div class="padding">
+
+                <ul id="timeline">
+                    <li>07:00</li>
+                    <li>08:00</li>
+                    <li>09:00</li>
+                    <li>10:00</li>
+                    <li>11:00</li>
+                    <li>12:00</li>
+                    <li>13:00</li>
+                    <li>14:00</li>
+                    <li>15:00</li>
+                    <li>16:00</li>
+                    <li>17:00</li>
+                    <li>18:00</li>
+                    <li>19:00</li>
+                    <li>20:00</li>
+                    <li>21:00</li>
+                    <li>22:00</li>
+                    <li>23:00</li>
+                    <li>24:00</li>
+                    <li>00:00</li>
+                    <li>01:00</li>
+                    <li>02:00</li>
+                    <li>03:00</li>
+                    <li>04:00</li>
+                    <li>05:00</li>
+                    <li>06:00</li>
+                </ul>
 
 
 
 
 
-            <!-- CONTENT IN PLANNER -->
+                <!-- CONTENT IN PLANNER -->
 
-            <div id="tcontent">
+                <div id="tcontent">
 
 
-                <div class="punit" style="top:200px;width:48%;height:220px;">
-                    Activity 2
+                    <div class="punit" style="top:200px;width:48%;height:220px;">
+                        Activity 2
+                    </div>
+
+                    <div class="punit" style="top:200px;width:48%;height:175px;right:0;">
+                        Activity 1
+                    </div>
+
+                    <div class="punit" style="top:500px;width:100%;height:200px;">
+                        Restaurant
+                    </div>
+
                 </div>
 
-                <div class="punit" style="top:200px;width:48%;height:175px;right:0;">
-                    Activity 1
-                </div>
 
-                <div class="punit" style="top:500px;width:100%;height:200px;">
-                    Restaurant
+            </div>
+
+
+
+            <!-- ADD NEW ON TIMELINE -->
+            <!-- ADDED WITH POSITION STICKY. NEED A JS FALLBACK -->
+            <div id="addnew">
+
+                <ul class="forms">
+                    <li>
+                        <label>Hello</label>
+                        <select>
+                                <option selected>Choose...</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>option 3</option>
+                            </select>
+                    </li>
+                    <li>
+                            <ul>
+                                    <li>
+                                        <label>Start tid</label>
+                                        <select>
+                                                <option selected>Choose...</option>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                                <option>option 3</option>
+                                            </select>
+                                    </li>
+                                    <li>
+                                        <label>Slut tid</label>
+                                        <select>
+                                                <option selected>Choose...</option>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                                <option>option 3</option>
+                                            </select>
+                                    </li>
+                                </ul>
+                    </li>
+                    <li>
+                        <label>Titel (optional)</label>
+                        <input type="text">
+                    </li>
+
+                    <li>
+                            <label>Beskrivelse</label>
+                            <input type="text">
+                    </li>
+                    <li>
+                            <label>Intern omkostning</label>
+                            <input type="text">
+                    </li>
+                </ul>
+                <div class="action">
+                    <button class="btn btn-primary">Create</button>
+                    <a href="#">
+                        <h4>Cancel</h4>
+                    </a>
                 </div>
 
             </div>
 
 
-            <!-- THIS MIGHT NEED A JS WITH TO BE DONE PROPERLY! -->
-            <div id="addnewtimeline">
-                <a href="#">
-                    <img src="img/icons/plus-white.svg" alt="Add">
-                </a>
-            </div>
 
         </div>
 
@@ -223,102 +313,109 @@
 
 
 
-        <div id="c" >
 
 
 
-                <header id="mainnav" class="border">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <h4>Om denne pakke</h4>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="#">
-                                    <h4>Program</h4>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="#">
-                                    <h4>Fakta</h4>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="#">
-                                    <h4>Budget</h4>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="#">
-                                    <h4>Kort / Transport</h4>
-                                </a>
-                            </li>
-                        </ul>
-                    </header>
-
-                     <div class="padding">
 
 
 
-                            <div id="filters">
-                                    <div class="left">
-                                        <button class="btn btn-secondary btn-small">Categories</button>
-                                        <button class="btn btn-secondary btn-small">Duration</button>
-                                        <button class="btn btn-secondary btn-small">Pricerange</button>
-                                    </div>
-                                    <div class="right">
-                                        <button class="btn btn-secondary btn-small">Show on map</button>
-                                        <button class="btn btn-secondary btn-small">Sort By</button>
-                                    </div>
-                        
-                                </div>
 
-                        <ul class="grid">
-                
-                            <!-- @include singleproduct.kit -->
-                            <!-- @include singleproduct.kit -->
-                            <!-- @include singleproduct.kit -->
-                            <!-- @include singleproduct.kit -->
-                            <!-- @include singleproduct.kit -->
-                            <!-- @include singleproduct.kit -->
-                            <!-- @include singleproduct.kit -->
-                            <!-- @include singleproduct.kit -->
-                            <!-- @include singleproduct.kit -->
-                            <!-- @include singleproduct.kit -->
-                
-                        </ul>
-                
-                        <ul class="pagination">
-                            <li>
-                                <a href="#">«</a>
-                            </li>
-                            <li>
-                                <a href="#">1</a>
-                            </li>
-                            <li>
-                                <a class="active" href="#">2</a>
-                            </li>
-                            <li>
-                                <a href="#">3</a>
-                            </li>
-                            <li>
-                                <a href="#">4</a>
-                            </li>
-                            <li>
-                                <a href="#">5</a>
-                            </li>
-                            <li>
-                                <a href="#">6</a>
-                            </li>
-                            <li>
-                                <a href="#">7</a>
-                            </li>
-                            <li>
-                                <a href="#">»</a>
-                            </li>
-                        </ul>
-                 </div>
+        <div id="c">
+
+
+
+            <header id="mainnav" class="border">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h4>Om denne pakke</h4>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <h4>Program</h4>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <h4>Fakta</h4>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <h4>Budget</h4>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <h4>Kort / Transport</h4>
+                        </a>
+                    </li>
+                </ul>
+            </header>
+
+            <div class="padding">
+
+
+
+                <div id="filters">
+                    <div class="left">
+                        <button class="btn btn-secondary btn-small">Categories</button>
+                        <button class="btn btn-secondary btn-small">Duration</button>
+                        <button class="btn btn-secondary btn-small">Pricerange</button>
+                    </div>
+                    <div class="right">
+                        <button class="btn btn-secondary btn-small">Show on map</button>
+                        <button class="btn btn-secondary btn-small">Sort By</button>
+                    </div>
+
+                </div>
+
+                <ul class="grid">
+
+                    <!-- @include singleproduct.kit -->
+                    <!-- @include singleproduct.kit -->
+                    <!-- @include singleproduct.kit -->
+                    <!-- @include singleproduct.kit -->
+                    <!-- @include singleproduct.kit -->
+                    <!-- @include singleproduct.kit -->
+                    <!-- @include singleproduct.kit -->
+                    <!-- @include singleproduct.kit -->
+                    <!-- @include singleproduct.kit -->
+                    <!-- @include singleproduct.kit -->
+
+                </ul>
+
+                <ul class="pagination">
+                    <li>
+                        <a href="#">«</a>
+                    </li>
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a class="active" href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">6</a>
+                    </li>
+                    <li>
+                        <a href="#">7</a>
+                    </li>
+                    <li>
+                        <a href="#">»</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
     </main>

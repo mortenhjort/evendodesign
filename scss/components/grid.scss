@@ -6,4 +6,29 @@
         grid-gap:2em;
     }
 
+    // .pgrid{
+    //     display: grid;
+    //     width: 100%;
+    //     grid-gap: 1em;
+    //     li.50{
+    //     }
+    // }
+}
+
+ul.forms{
+    display: flex;
+    width: 100%;
+    > li{
+        padding-top: 1em;
+        flex-basis:100%;
+         ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                width: calc(50% - 0.5em);
+            }
+        }
+    }
+
+   
 }
