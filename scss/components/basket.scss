@@ -1,0 +1,28 @@
+.basket{
+    #t{
+        display: flex;
+        width: 100%;
+        #r{
+            flex:0 0 400px;
+            border:1px solid $lightgrey;
+            padding: 1em;
+            margin-left: 3em;
+            box-sizing: border-box;
+            border-radius: $borderradius;
+        }
+        #l{
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            #details,#credit{
+                flex: 1;
+            }
+            #details{
+                margin-right: 1em;
+            }
+            #credit{
+                margin-left: 1em;
+            }
+        }
+    }
+}

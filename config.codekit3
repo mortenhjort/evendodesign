@@ -9,6 +9,20 @@
 	],
 "creatorBuild": "26148",
 "files": {
+	"\/basket.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/basket.html",
+		"oF": 0
+		},
+	"\/basket.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/basket.html",
+		"oF": 0
+		},
 	"\/css\/frontpage.css": {
 		"aP": 1,
 		"bl": 0,
@@ -385,6 +399,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/icons\/update.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/update.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/logos\/evendo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -534,6 +558,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/animations.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/components\/basket.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/basket.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
