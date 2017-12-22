@@ -86,13 +86,24 @@
             li{
                 display: flex;
                 justify-content: space-between;
-                .action{
+            //    align-content: flex-start
+                section{
+                    // text-align: left;
+                    // width: 25%;
+                    flex: 25%;
+                    
+                }
+                .q{
                     .space{
                         margin: 0 .5em;
                     }
                 }
-                section{
-                    text-align: left;
+                .p,.d{
+                    p{
+                        font-size: $fontsmall;
+                        margin: .25em 0;
+                    }
+                    
                 }
             }
         }
