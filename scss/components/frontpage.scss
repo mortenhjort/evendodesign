@@ -3,8 +3,9 @@ $widgetpadding:5em;
 #fhero{
     position: relative;
     height: 90vh;
+    max-height: 700px;
     margin-left:$navwidth;
-    background: url(../img/logos/hero-dots.svg) 50% / 96% no-repeat;
+    background: url(../img/logos/hero-dots.svg) 50% / 86% no-repeat $lightgrey;
 
     #hw{
         position: absolute;
