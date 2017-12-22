@@ -11,7 +11,10 @@
             border-radius: $borderradius;
             height: fit-content;
             .confirm{
-                margin:3em 0;
+                margin:1em 0 2em;
+                .checkbox{
+                    margin:1em 0;
+                }
             }
             ul{
                 display: flex;
@@ -68,14 +71,40 @@
             #credit{
                 margin-left: 1em;
             }
+            .nmt{
+                margin-top: 0;
+            }
+            .nmb{
+                margin-bottom: 0;
+            }
+        }
+    }
+    #b{
+        margin-top: 5em;
+        
+        #bp{
+            li{
+                display: flex;
+                justify-content: space-between;
+                .action{
+                    .space{
+                        margin: 0 .5em;
+                    }
+                }
+                section{
+                    text-align: left;
+                }
+            }
         }
     }
 }
 
 .cards{
     display: flex;
+    padding-top: .5em;
     img{
         width: 2em;
-        margin-right: 1em
+        margin-right: 1em;
+        align-self: center;
     }
 }

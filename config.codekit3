@@ -309,6 +309,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/icons\/creditcard.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/creditcard.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/icons\/event.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -399,6 +409,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/icons\/paper.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/paper.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/icons\/planner-cal.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -414,6 +434,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/icons\/plus-white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/icons\/remove.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/icons\/remove.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

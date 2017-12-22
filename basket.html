@@ -491,137 +491,146 @@
 
 
     <main id="content" class="basket">
+        <div class="widthmedium">
+
+            <div id="t">
+
+                <section id="l">
 
 
-        <div id="t">
+                    <div id="details">
 
-            <section id="l">
+                        <h4 class="nmt">Billing details</h4>
 
+                        <ul class="forms">
+                            <li>
+                                <label>Company Name</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label>Company Registration Code</label>
+                                <input type="number">
+                            </li>
 
-                <div id="details">
-
-                    <h4>Billing details</h4>
-
-                    <ul class="forms">
-                        <li>
-                            <label>Company Name</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <label>Company Registration Code</label>
-                            <input type="text">
-                        </li>
-
-                        <li>
-                            <label>First Name *</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <label>Last Name *</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <label>Email *</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <label>Phone *</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <ul>
-                                <li>
-                                    <label>Zip / Postal Code *</label>
-                                    <input type="text">
-                                </li>
-                                <li>
-                                    <label>City *</label>
-                                    <input type="text">
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <label>Country</label>
-                            <select>
-                                <option selected>Choose...</option>
-                                <option>Option 1</option>
-                                <option>Option 2</option>
-                                <option>option 3</option>
-                            </select>
-                        </li>
-                    </ul>
-                </div>
+                            <li>
+                                <label>First Name *</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label>Last Name *</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label>Email *</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label>Phone *</label>
+                                <input type="number">
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <label>Zip / Postal Code *</label>
+                                        <input type="number">
+                                    </li>
+                                    <li>
+                                        <label>City *</label>
+                                        <input type="text">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label>Country</label>
+                                <select>
+                                    <option selected>Choose...</option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>option 3</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
 
 
-                <div id="credit">
+                    <div id="credit">
 
-                    <h4>Coupon Code</h4>
+                        <h4 class="nmt">Coupon Code</h4>
 
-                    <ul class="forms">
-                        <li>
-                            <label>Enter Your Coupon Code</label>
-                            <span class="flex">
+                        <ul class="forms">
+                            <li>
+                                <label>Enter Your Coupon Code</label>
+                                <span class="flex">
                                     <input type="text">
                                     <a href="#">
-                                        <img class="btn-update" src="img/icons/update.svg" alt="Click to validate">
-                                    </a>    
-                            </span>
-                            
-                        </li>
-                    </ul>
+                                        <img class="btn-icon-round" src="img/icons/update.svg" alt="Click to validate">
+                                    </a>
+                                </span>
 
-                    <h4>Payment Method</h4>
-                    
-                    
-                    
-                    <ul class="forms">
-                        <li>
-                            <ul>
-                                <li>
-                                        <input type="text">
-                                </li>
-                                <li>
-                                       
-                                        <input type="text">
-                                </li>
-                            </ul>
-                            
-                        </li>
-                        <li>
-                            <p>This is some explaination for the credit card / invoice payment in two lines.</p>
-                        </li>
+                            </li>
+                        </ul>
 
-                        <li>
-                            <label>Card Number *</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <label>Experiation Date *</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <label>CVV *</label>
-                            <input type="text">
-                        </li>
-                        <li>
+                        <h4 class="nmb">Payment Method</h4>
+
+
+
+                        <ul class="forms">
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <figure class="method active">
+                                                <img src="img/icons/creditcard.svg">
+                                                <p>Credit Card</p>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <figure class="method">
+                                                <img src="img/icons/paper.svg">
+                                                <p>invoice</p>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <p class="fontsmall">This is some explaination for the credit card / invoice payment in two lines.</p>
+                            </li>
+
+                            <li>
+                                <label>Card Number *</label>
+                                <input type="number">
+                            </li>
+                            <li>
+                                <label>Experiation Date *</label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label>CVV *</label>
+                                <input type="number">
+                            </li>
+                            <li>
                                 <label>Payment powered by Stripe</label>
                                 <div class="cards">
-                                    
+
                                     <img src="img/credit/mastercard.svg">
                                     <img src="img/credit/visa.svg">
                                     <img src="img/credit/maestro.svg">
                                     <img src="img/credit/visaelectron.svg">
                                 </div>
-                        </li>
-                    </ul>
-                </div>
+                            </li>
+                        </ul>
+                    </div>
 
 
-            </section>
+                </section>
 
 
 
-            <section id="r">
+                <section id="r">
 
 
                     <ul>
@@ -631,24 +640,30 @@
                                 <li>DKK 3500,00</li>
                                 <li>Discount</li>
                                 <li>- DKK 200,00</li>
-                                <li><a href="#"><img src="img/icons/info.svg"></a>TOTAL PAY NOW</li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icons/info.svg">
+                                    </a>TOTAL PAY NOW</li>
                                 <li>DKK 3300,00</li>
                                 <li>VAT Inkl</li>
                                 <li>DK 660,00</li>
                             </ul>
                         </li>
                         <li>
-                                <ul>
-                                    <li>Subtotal</li>
-                                    <li>DKK 3500,00</li>
-                                    <li>Discount</li>
-                                    <li>- DKK 200,00</li>
-                                    <li><a href="#"><img src="img/icons/info.svg"></a>TOTAL FLEXBOOKING</li>
-                                    <li>DKK 3300,00</li>
-                                    <li>VAT Inkl</li>
-                                    <li>DK 660,00</li>
-                                </ul>
-                            </li>
+                            <ul>
+                                <li>Subtotal</li>
+                                <li>DKK 3500,00</li>
+                                <li>Discount</li>
+                                <li>- DKK 200,00</li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/icons/info.svg">
+                                    </a>TOTAL FLEXBOOKING</li>
+                                <li>DKK 3300,00</li>
+                                <li>VAT Inkl</li>
+                                <li>DK 660,00</li>
+                            </ul>
+                        </li>
                     </ul>
 
 
@@ -656,20 +671,86 @@
                         <form class="checkbox">
                             <input type="checkbox">
                             <label>I would like to recieve newsletter</label>
-                        </form> 
+                        </form>
 
                         <form class="checkbox">
-                                <input type="checkbox">
-                                <label>I have read and accepted Evende <a href="#">Terms and Conditions</a></label>
-                            </form> 
+                            <input type="checkbox">
+                            <label>I have read and accepted Evendo
+                                <a href="#">Terms and Conditions</a>
+                            </label>
+                        </form>
                     </div>
 
 
                     <button class="btn btn-primary btn-full">Confirm Purchase</button>
 
-            </section>
+                </section>
+
+            </div>
+
+
+
+
+
+            <div id="b">
+
+                <ul id="bp">
+                    <li id="names">
+                        <section>
+                            <h4>Quantity</h4>
+                        </section>
+                        <section>
+                            <h4>Product</h4>
+                        </section>
+                        <section>
+                            <h4>Date, Time, Location</h4></section>
+                        <section>
+                            <h4>Price Plan</h4></section>
+                    </li>
+                    <li>
+                        <section class="action">
+                            <input class="num" type="number" value="21">
+                            <a href="#"><img class="btn-icon-round space" src="img/icons/update.svg" alt="Click to update"></a>
+                            <a href="#"><img class="btn-icon-round" src="img/icons/remove.svg" alt="Click to remove"></a>
+                        </section>
+                        <section>
+                            <h4>Product</h4>
+                        </section>
+                        <section>
+                            <h4>Date, Time, Location</h4></section>
+                        <section>
+                            <h4>Price Plan</h4></section>
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
 
         </div>
+
+
+
+        <!-- BOTTOM PRODUCTS -->
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -677,13 +758,7 @@
     </main>
 
 
-
 </body>
-
-
-
-
-
 
 
 </html>
