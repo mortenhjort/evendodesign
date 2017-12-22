@@ -9,6 +9,51 @@
             margin-left: 3em;
             box-sizing: border-box;
             border-radius: $borderradius;
+            height: fit-content;
+            .confirm{
+                margin:3em 0;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                 li{
+                     text-align: right;
+                     border-bottom: 1px solid $lightgrey;
+                     padding-bottom: .5em;
+                     margin-bottom:1em;
+                    ul{
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        li{
+                            font-size: $fontsmall;
+                            font-weight: $regular;
+                            border-bottom: none;
+                            margin:.15em 0;
+                            color:$grey;
+                         &:nth-child(odd){
+                            flex-basis: 60%;
+                          }
+                          &:nth-child(even){
+                            // font-weight: $bold;
+                            flex-basis: 40%;
+                          }
+                          &:nth-child(5),&:nth-child(6){
+                              font-size: $fontbody;
+                              font-weight: $bold;
+                              color:$black;
+                          }
+                          img{
+                              width: 1em;
+                              padding-right: .5em;
+                              opacity: .5;
+                          }  
+                        }
+                    }
+                }
+            }
+            
         }
         #l{
             flex: 1;
@@ -24,5 +69,13 @@
                 margin-left: 1em;
             }
         }
+    }
+}
+
+.cards{
+    display: flex;
+    img{
+        width: 2em;
+        margin-right: 1em
     }
 }

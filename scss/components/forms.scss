@@ -29,3 +29,20 @@ select {
     appearance: none;
     background: url(../img/icons/chevron-down.svg) calc(100% - 1em) / 1em no-repeat white;
   }
+
+
+.checkbox{
+    input{
+        width: 1em;
+        border:1px solid $lightgrey;
+        margin-bottom: 5px;
+        float:left;
+       
+    }
+    label{
+        flex:1;
+        margin-bottom: 0;
+        font-size: $fontsmall;
+        display: inline;
+    }
+}

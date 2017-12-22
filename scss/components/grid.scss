@@ -28,6 +28,13 @@ ul.forms{
                 width: calc(50% - 0.5em);
             }
         }
+        .flex{
+            display: flex;
+            align-items: center;
+            input:first-child{
+                margin-right: 1em;
+            }
+        }
     }
 
    
