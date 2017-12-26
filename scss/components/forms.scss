@@ -16,6 +16,9 @@
         font-weight: $regular;
         border-radius: $borderradius;
     }
+    button{
+        margin-top: 1em;
+    }
     
 }
 
@@ -58,6 +61,7 @@ select {
         margin-bottom: 0;
         font-size: $fontsmall;
         display: inline;
+        margin-top: 1px;
     }
 }
 
