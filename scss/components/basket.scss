@@ -86,11 +86,19 @@
             li{
                 display: flex;
                 justify-content: space-between;
-            //    align-content: flex-start
+                border-bottom: 1px solid $lightgrey;
+                margin:1.5em 0;
+                padding: 1.5em 0;
+                
+                &:last-child{
+                    border-bottom: none;
+                }
                 section{
-                    // text-align: left;
-                    // width: 25%;
                     flex: 25%;
+                    h4{
+                        margin-bottom: 0;
+                        
+                    }
                     
                 }
                 .q{
@@ -98,15 +106,47 @@
                         margin: 0 .5em;
                     }
                 }
-                .p,.d{
+                .p,.d,.pp{
                     p{
                         font-size: $fontsmall;
                         margin: .25em 0;
                     }
                     
                 }
+                .pp{
+                    .l{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        
+                        img{
+                            width: 1em;
+                            padding:.34em .25em 0 0;
+                        }
+                        p{
+                            display: inherit;
+                        }
+
+                        span{
+                            display: flex;
+                            align-items: end;
+                        }
+                        
+                    }
+                }
+            }
+            #names{
+                padding-bottom: .5em;
+
             }
         }
+    }
+    .pedit{
+        display: initial;
+    }
+    .imgedit{
+        width: .8em;
+        display: inline-block;
     }
 }
 
