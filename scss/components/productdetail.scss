@@ -21,7 +21,7 @@
     }
     
     .right{
-        flex:0 0 500px;
+        flex:0 0 550px;
         #book{
             border:1px solid $lightgrey;
             margin-left: 3em;
@@ -33,6 +33,45 @@
             .meta{
                 padding:2em;
                 text-align: center;
+                .prices{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 1em;
+                    .i{
+                        display: flex;
+                        align-items: end;
+                        
+                        img{
+                            padding-right: .5em;
+                            width: 1em;
+                            margin: 1px 0 0 -2px;
+                        }
+                        
+                    }
+                }
+                
+                section{
+                  text-align: left;
+                  width: 190px;
+                  
+                //   &:last-child{
+                //       padding-left: 1em;
+                //   }
+                  h4{
+                      margin-top: 0;
+                      padding: 0 0 1em 0;
+                  }
+                  h3{
+                    font-size: $fontsmall;
+                    margin:0;
+                    padding-bottom:.5em;
+                  }
+                  p{
+                      font-size: $fontsmall;
+                      color:$grey;
+                      padding-top: .5em;
+                  }
+                }
                 h3{
                     color: $grey;
                     span{
