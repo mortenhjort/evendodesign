@@ -275,6 +275,9 @@
         #overview{
             .section{
                 padding: 2em 2em 0 2em;
+                &:last-child{
+                    padding-bottom: 2em;
+                }
               h4{
                  border-bottom: 1px solid $lightgrey;
                  padding-bottom: 1em;
