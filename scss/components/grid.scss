@@ -5,14 +5,6 @@
         grid-template-columns: repeat(auto-fill, minmax(350px, auto));
         grid-gap:2em;
     }
-
-    // .pgrid{
-    //     display: grid;
-    //     width: 100%;
-    //     grid-gap: 1em;
-    //     li.50{
-    //     }
-    // }
 }
 
 ul.forms{
@@ -26,6 +18,17 @@ ul.forms{
             justify-content: space-between;
             li{
                 width: calc(50% - 0.5em);
+            }
+        }
+        .three{
+            li{
+                width: calc(33% - 0.5em);
+            }
+        }
+
+        .four{
+            li{
+                width: calc(25% - 0.5em);
             }
         }
         .flex{

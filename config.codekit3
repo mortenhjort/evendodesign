@@ -9,6 +9,20 @@
 	],
 "creatorBuild": "26148",
 "files": {
+	"\/account.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/account.html",
+		"oF": 0
+		},
+	"\/account.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/account.html",
+		"oF": 0
+		},
 	"\/basket.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -638,6 +652,19 @@
 		"oA": 0,
 		"oAP": "\/productdetailpage.html",
 		"oF": 0
+		},
+	"\/scss\/components\/account.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/account.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
 		},
 	"\/scss\/components\/animations.scss": {
 		"aP": 0,
