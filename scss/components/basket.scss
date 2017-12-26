@@ -35,6 +35,7 @@
                             border-bottom: none;
                             margin:.15em 0;
                             color:$grey;
+                            
                          &:nth-child(odd){
                             flex-basis: 60%;
                           }
@@ -56,12 +57,14 @@
                     }
                 }
             }
-            
         }
         #l{
             flex: 1;
             display: flex;
             justify-content: space-between;
+            @media only screen and (max-width: 1100px) {
+                flex-direction: column;
+            }
             #details,#credit{
                 flex: 1;
             }
@@ -70,9 +73,13 @@
             }
             #credit{
                 margin-left: 1em;
+                @media only screen and (max-width: 1100px) {
+                    margin:3em 0 0;
+                }
             }
             .nmt{
                 margin-top: 0;
+                
             }
             .nmb{
                 margin-bottom: 0;
