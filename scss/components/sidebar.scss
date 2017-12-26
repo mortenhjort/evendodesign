@@ -115,13 +115,14 @@ ul.subitems{
 
         a{
             font-size: $fontbody;
+            font-weight: $regular;
             color:$grey;
             padding: .25em;
             padding-left: .5em;
-            border-left:6px solid $lightblue;
+            border-left:4px solid $lightblue;
 
             &:hover{
-                border-left:6px solid $orange;
+                border-left:4px solid $orange;
                 
             }
         }

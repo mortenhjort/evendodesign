@@ -116,6 +116,21 @@ a:link,a:visited,a:hover,a:active  {
     }
 } 
 
+.emptystate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 9em);
+    .state{
+        text-align: center;
+        opacity: .3;
+        img{
+            width: 5em;
+        }
+       
+    }
+}
+
 
 
 /// RESPONSIVE MAPS

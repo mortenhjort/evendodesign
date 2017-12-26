@@ -57,6 +57,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/emptystate.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/emptystate.html",
+		"oF": 0
+		},
 	"\/header-search.kit": {
 		"cB": 0,
 		"ft": 2048,
