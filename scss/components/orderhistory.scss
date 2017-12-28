@@ -1,8 +1,15 @@
 #oh{
     > li{
-        border:1px solid $lightgrey;
+        border-top:1px solid $lightgrey;
         padding: 1em 2em;
+        // margin-top: 1em;
         border-radius: $borderradius;
+        // &:first-child{
+        //     margin:0;
+        // }
+            &:last-child{
+                border-bottom: 1px solid $lightgrey;;
+            }
         .top{
             display: flex;
             justify-content: space-between;

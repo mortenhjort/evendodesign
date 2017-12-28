@@ -516,13 +516,15 @@
                         </p>
                         <img class="arrow" src="img/icons/chevron-down.svg">
                     </section>
-                    <section class="inner">
+                    <section class="inner" id="open">
 
                         <header>
                             <section>
                                 <h2>This is a productname</h2>
-                                <p><b>Date:</b> 29. nov 2017</p>
-                                <p><b>Location:</b> Ravnsborg Tværgade 5 København N, Danmark</p>
+                                <p>
+                                    <b>Date:</b> 29. nov 2017</p>
+                                <p>
+                                    <b>Location:</b> Ravnsborg Tværgade 5 København N, Danmark</p>
                             </section>
                             <section>
                                 <p>
@@ -542,17 +544,87 @@
                         <!-- IF ADDONS -->
                         <ul class="list">
                             <li>100x Beers</li>
-                            <li><b>DKK 2.000,00</b></li>
+                            <li>
+                                <b>DKK 2.000,00</b>
+                            </li>
                             <li>10x Wine bottles</li>
-                            <li><b>DKK 3.000,00</b></li>
+                            <li>
+                                <b>DKK 3.000,00</b>
+                            </li>
                             <li>20x Drinks</li>
-                            <li><b>DKK 2.000,00</b></li>
+                            <li>
+                                <b>DKK 2.000,00</b>
+                            </li>
                         </ul>
 
 
                     </section>
 
                 </li>
+
+
+
+                <li>
+                        <section id="" class="top">
+                            <p>
+                                <b>Test Package</b>
+                            </p>
+                            <p>Order:
+                                <b>1A2WCI6</b>
+                            </p>
+                            <p>Order date:
+                                <b>10/12 2017</b>
+                            </p>
+                            <p>Betalt:
+                                <b>DKK 275,00</b>
+                            </p>
+                            <img class="arrow" src="img/icons/chevron-down.svg">
+                        </section>
+                        <section class="inner">
+    
+                            <header>
+                                <section>
+                                    <h2>This is a productname</h2>
+                                    <p>
+                                        <b>Date:</b> 29. nov 2017</p>
+                                    <p>
+                                        <b>Location:</b> Ravnsborg Tværgade 5 København N, Danmark</p>
+                                </section>
+                                <section>
+                                    <p>
+                                        <b>DKK 1.600,00</b>
+                                    </p>
+                                    <p>Betaling reserveret
+                                        <b>DKK 400,00</b>
+                                    </p>
+                                    <p>Betaling frigivet
+                                        <b class="red">-DKK 400,00</b>
+                                    </p>
+                                </section>
+    
+                            </header>
+    
+    
+                            <!-- IF ADDONS -->
+                            <ul class="list">
+                                <li>100x Beers</li>
+                                <li>
+                                    <b>DKK 2.000,00</b>
+                                </li>
+                                <li>10x Wine bottles</li>
+                                <li>
+                                    <b>DKK 3.000,00</b>
+                                </li>
+                                <li>20x Drinks</li>
+                                <li>
+                                    <b>DKK 2.000,00</b>
+                                </li>
+                            </ul>
+    
+    
+                        </section>
+    
+                    </li>
             </ul>
 
 
@@ -567,7 +639,7 @@
 
 <script>
     $('#toggle').click(function () {
-        $('.inner').toggle('fast');
+        $('#open').toggle('fast');
     });
 </script>
 
