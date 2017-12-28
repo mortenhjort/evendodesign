@@ -3,3 +3,43 @@
         margin: 2em 0 0;
     }
 }
+
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 9em);
+    .box{
+        text-align: center;
+        width: 600px;
+        padding: 1em;
+        button{
+            &:first-child{
+                margin-right: 1em;
+            }
+        }
+        .btn-primary{
+            margin-top: 2em;
+        }
+        label{
+            text-align: left;
+        }
+        #social{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 2em;
+        }
+      a{
+          p{
+              text-decoration: underline;
+          }
+      }
+      .terms{
+          margin-top: 1em;
+      } 
+      p{
+          padding: 1em 0;
+      }
+    }
+}
