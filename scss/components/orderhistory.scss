@@ -1,5 +1,5 @@
 #oh{
-    li{
+    > li{
         border:1px solid $lightgrey;
         padding: 1em 2em;
         border-radius: $borderradius;
@@ -19,7 +19,7 @@
         }
         .inner{
             display: none;
-            border-top:1px dashed $lightgrey;
+            border-top:1px solid $lightgrey;
             margin-top:1em;
             padding-top: 1em;
             header{
@@ -32,6 +32,13 @@
                     }
                 }
             }
+        }
+    }
+    .list{
+        border-top:1px dashed $lightgrey;
+        padding-top: 1em;
+        li{
+            margin: .25em 0;
         }
     }
 }

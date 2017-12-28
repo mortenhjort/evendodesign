@@ -39,6 +39,20 @@ ul.forms{
             }
         }
     }
-
    
+}
+
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    li{
+        flex-basis:48%;
+        font-weight: $regular;
+        &:nth-child(even){
+            text-align: right;
+        }
+    }
 }
