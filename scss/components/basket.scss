@@ -187,3 +187,44 @@
         align-self: center;
     }
 }
+
+#bs{
+    .s{
+        margin: 2em 0;
+        border-bottom:1px solid $lightgrey;
+        padding-bottom: 2em;
+        &:last-child{
+            border-bottom: none;
+        }
+        p{
+            font-size: $fontsmall;
+            margin: .25em 0;
+        }
+        .list{
+            padding-top: 1em;
+        }
+        header{
+            display: flex;
+            align-items: center;
+        }
+        img{
+            border-radius: $borderradius;
+            width: 3em;
+            padding-right: 1em;
+        }
+    }
+    .total{
+        .list{
+            font-size: $fontbody;
+            margin-bottom: 2em;
+            li{
+                padding: .25em 0;
+                &:first-child,&:nth-child(2){
+                    padding-top: 0;
+                }
+                
+            }
+        }
+    }
+
+}

@@ -11,11 +11,6 @@
                 </a>
             </li>
 
-
-
-
-
-
             <li>
                 <a href="#" id="navsearch">
                     <img src="img/icons/search.svg" alt="Search">
@@ -38,7 +33,7 @@
             </li>
 
             <li>
-                <a href="basket.html">
+                <a href="#" id="navbasket">
                     <img src="img/icons/basket.svg" alt="Basket">
                     <h3>Basket</h3>
                 </a>
@@ -75,11 +70,11 @@
 <div class="menu" id="ssearch">
 
     <div class="wrap">
-        
+
         <form class="search">
             <img src="img/icons/search.svg" alt="Search">
-             <input type="search" placeholder="Type to search...">
-         </form>
+            <input type="search" placeholder="Type to search...">
+        </form>
 
         <ul class="cvert">
             <li>
@@ -260,6 +255,96 @@
 
 
 
+
+
+
+
+<div class="menu" id="bbasket">
+
+    <div class="wrap">
+
+        <div id="bs">
+            <h2 class="tc">Onsdag d. 12. februar </h2>
+
+
+            <section class="s">
+                <header>
+                    <img src="https://d3ulizuhtuf022.cloudfront.net/images/165/39f80cf8366946a0bf832b4d57849b77.png">
+                    <h3>Human Football</h3>
+                </header>
+                <p>
+                    <b>Location: </b>København</p>
+                <p>
+                    <b>Time: </b>12:30 - 13:30</p>
+                <p>
+                    <b>Amount: </b>53</p>
+                <ul class="list">
+                    <li>Human Football</li>
+                    <li>
+                        <b>DKK 7.000,00</b>
+                    </li>
+                </ul>
+
+            </section>
+
+
+            <section class="s">
+                    <header>
+                        <img src="https://d3ulizuhtuf022.cloudfront.net/images/555/0961b47bb7824e6a86b74b1da3c65baf.png">
+                        <h3>TapasAmor</h3>
+                    </header>
+                    <p>
+                        <b>Location: </b>København</p>
+                    <p>
+                        <b>Time: </b>17:00 - 20:00</p>
+                    <p>
+                        <b>Amount: </b>53</p>
+                    <ul class="list">
+                        <li>Menu 1</li>
+                        <li>
+                            <b>DKK 14.000,00</b>
+                        </li>
+                    </ul>
+    
+                </section>
+
+
+                <div class="total">
+                        <ul class="list">
+                                <li><b>TOTAL</b></li>
+                                <li>
+                                    <b>DKK 7.000,00</b>
+                                </li>
+                                <li><img src="img/icons/info.svg">Forudbetaling</li>
+                                <li>
+                                   DKK 1.400,00
+                                </li>
+                                <li><img src="img/icons/info.svg">Restbetaling</li>
+                                <li>
+                                    DKK 5.600,00
+                                </li>
+                            </ul>
+                </div>
+
+
+
+
+        </div>
+
+            <a href="basket.html">
+                 <button class="btn btn-primary btn-full">Go to checkout</button>
+             </a>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
 <div class="menu" id="pages">
 
     <div class="wrap">
@@ -268,9 +353,9 @@
 
 
 
-<a href="account.html">
-        <button class="btn btn-secondary btn-full">My Evendo</button>
-</a>
+        <a href="account.html">
+            <button class="btn btn-secondary btn-full">My Evendo</button>
+        </a>
 
 
 
@@ -409,6 +494,13 @@
 <script>
     $('#navsearch').on('click', function () {
         $('#ssearch').toggleClass('menuopen');
+
+    })
+</script>
+<!-- TOGGLE SEARCH -->
+<script>
+    $('#navbasket').on('click', function () {
+        $('#bbasket').toggleClass('menuopen');
 
     })
 </script>

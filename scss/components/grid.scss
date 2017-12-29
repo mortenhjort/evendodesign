@@ -54,5 +54,10 @@ ul.forms{
         &:nth-child(even){
             text-align: right;
         }
+        img{
+            width: 1em;
+            padding-right: .5em;
+            margin-top: -2px;
+        }
     }
 }
